@@ -8,7 +8,7 @@
 }
 
 #body{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
 }
  
 .cont-principal{
@@ -20,10 +20,11 @@
     font-weight: 600;
 }
 
+/*nav-var*/
 .header-lateral-bar{
     display: flex;
     justify-content: center;
-    background-color: rgb(250, 235, 215);
+    background-color: rgb(245, 236, 224);
     border-right: 1px solid #000;
     width: 25vw;
     height: 100vh;
@@ -50,12 +51,13 @@
     text-decoration: none;
 }
 
+/*main, section*/
 .main-cont{
     display: flex;
     flex-direction: column;
     width: 75vw;
     height: 100vh;
-    background-color:rgb(242, 255, 255);
+    background-color:rgb(248, 241, 241);
     list-style: none;
     overflow-y: scroll;
 }
@@ -64,15 +66,46 @@
     padding: 30px 0 0 30px;
 }
 
+
+.main-section h3{
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+}
+
 .main-section p{
     padding: 10px;
 }
 
+.main-section ul{
+    padding-left: 60px;
+}  
+
 .main-section li{
-    list-style: none;
+    padding: 6px 0;
+}
+ 
+.link-refer{
+    text-decoration: none;
+    color:rgba(67, 3, 241, 0.7);
+} 
+
+.span{
+    font-weight: 600;
 }
 
+.main-section pre{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(215, 233, 227);
+    border-radius: 5px;
+} 
 
+.main-section ol{
+    padding-left: 60px; 
+}
+
+/*@media */
 @media(max-width: 600px){
 
     .cont-principal{
