@@ -119,15 +119,17 @@
         flex-direction: column;
         text-align: center;
         width: 96vw;
-        max-height: 400px;
+        max-height: 350px;
         padding: 4px;
         border: 1px solid rgba(0, 0, 0, .3);
         background-color: rgb(212, 238, 238);
+        position: fixed;
     }
 
     .main-cont{
         width: 100vw;
         overflow-y: scroll;
+        margin-top: 350px;
     }
 }
 
