@@ -24,12 +24,13 @@
                     <li><a class="nav-link" href="#introduccion">Introduccion</a></li>
                     <li><a class="nav-link" href="#evolucion">Evolución</a></li>
                     <li><a class="nav-link" href="#filosofia">Filosofia</a></li>
-                    <li><a class="nav-link" href="#description-5">Description-5</a></li>
-                    <li><a class="nav-link" href="#description-6">Description-6</a></li>
-                    <li><a class="nav-link" href="#description-7">Description-7</a></li>
-                    <li><a class="nav-link" href="#description-8">Description-8</a></li>
-                    <li><a class="nav-link" href="#description-9">Description-9</a></li>
-                    <li><a class="nav-link" href="#description-10">Description-10</li>
+                    <li><a class="nav-link" href="#oop">Orientado a objetos</a></li>
+                    <li><a class="nav-link" href="#sintaxis">Sintaxis</a></li>
+                    <li><a class="nav-link" href="#app-autonomas">Aplicaciones autónomas</a></li>
+                    <li><a class="nav-link" href="#applets">Applets</a></li>
+                    <li><a class="nav-link" href="#variables">Variables en Java</a></li>
+                    <li><a class="nav-link" href="#tipos-variables">Tipos de variables</li>
+                    <li><a class="nav-link" href="#referencia" >Referencia</li>
                 </ul>
             </nav>
         </header>
@@ -104,21 +105,28 @@
                                     class="link-refer"><em>strictfp</em></a>
                             </li>
 
-                            <li><a href="https://es.wikipedia.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)" class="link-refer"><em>reflexión en la programación</em></a></li>
+                            <li><a href="https://es.wikipedia.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)"
+                                    class="link-refer"><em>reflexión en la programación</em></a></li>
 
-                            <li>la api gráfica <a href="https://es.wikipedia.org/wiki/Swing_(biblioteca_gr%C3%A1fica)" class="link-refer"><em>(Swing)</em></a> fue integrada en las clases básicas</li>
+                            <li>la api gráfica <a href="https://es.wikipedia.org/wiki/Swing_(biblioteca_gr%C3%A1fica)"
+                                    class="link-refer"><em>(Swing)</em></a> fue integrada en las clases básicas</li>
 
                             <li></li>
                         </ul>
                     </li>
 
-                    <li><span class="span">J2SE 1.3</span> (8 de mayo de 2000) la inclusión de la máquina virtual de <a href="https://es.wikipedia.org/w/index.php?title=HotSpot&action=edit&redlink=1" class="link-refer"><em>HotSpot</em></a></li>
+                    <li><span class="span">J2SE 1.3</span> (8 de mayo de 2000) la inclusión de la máquina virtual de <a
+                            href="https://es.wikipedia.org/w/index.php?title=HotSpot&action=edit&redlink=1"
+                            class="link-refer"><em>HotSpot</em></a></li>
 
-                    <li><span class="span">J2SE 1.4</span> (6 de febrero de 2002) Comunidad de Java <a href="https://www.jcp.org/en/jsr/detail?id=59" class="link-refer"><em>JSR 59</em></a></li>
+                    <li><span class="span">J2SE 1.4</span> (6 de febrero de 2002) Comunidad de Java <a
+                            href="https://www.jcp.org/en/jsr/detail?id=59" class="link-refer"><em>JSR 59</em></a></li>
 
                     <li><span class="span">JSE 5.0</span> (30 de setiembre de 2004) </li>
                     <ul>
-                        <li>Bucle for mejorado -La sintaxis para el bucle for se ha extendido con una sintaxis especial para iterar sobre cada miembro de un array o sobre cualquier clase que implemente iterable, como la clase estandar Collection, de la siguiente forma: </li>
+                        <li>Bucle for mejorado -La sintaxis para el bucle for se ha extendido con una sintaxis especial
+                            para iterar sobre cada miembro de un array o sobre cualquier clase que implemente iterable,
+                            como la clase estandar Collection, de la siguiente forma: </li>
                     </ul>
 
                     <pre>
@@ -129,7 +137,8 @@
                         }</code>
                     </pre>
 
-                    <li><span class="span">Java SE 6</span> (11 de diciembre de 2006) En esta versión Sun cambió el nombre "JS2E" por <em>Java SE</em> y se elimino el "0" del número de versión.</li>
+                    <li><span class="span">Java SE 6</span> (11 de diciembre de 2006) En esta versión Sun cambió el
+                        nombre "JS2E" por <em>Java SE</em> y se elimino el "0" del número de versión.</li>
 
                     <li><span class="span">Java SE 7</span> Su lanzamiento julio de 2012</li>
 
@@ -161,103 +170,230 @@
                     <li>Debería diseñarse para ejecutar código en sistemas remotos de forma segura.</li>
                     <li>Debería ser fácil de usar y tomar lo mejor de otros lenguajes orietado a objetos, como C++.</li>
                 </ol>
+                <p>Para conseguir la ejecución de código remoto y el soporte de red, los programadores de Java a veces
+                    recurren a extensiones como <a href="https://es.wikipedia.org/wiki/CORBA"
+                        class="link-refer"><em>CORBA</em></a> (Common Object Request Broker Architecture), Internet
+                    Communications Engine u <a href="https://es.wikipedia.org/wiki/OSGi"
+                        class="link-refer"><em>OSGI</em></a>, respectivamente.</p>
             </section>
 
-            <section class="main-section" id="description-5">
+            <section class="main-section" id="oop">
                 <header>
-                    <h3>Description 5</h3>
+                    <h3>Orientado a objetos</h3>
                 </header>
 
-                <p>Parrafos </p>
-                <p></p>
-                <p></p>
+                <p>La primera característica, <a href="" class="link-refer"><em>orientado a objetos</em></a> (“OO”), se
+                    refiere a un método de programación y al diseño del lenguaje. Aunque hay muchas interpretaciones
+                    para OO, una primera idea es diseñar el software de forma que los distintos tipos de datos que usen
+                    estén unidos a sus operaciones. Así, los datos y el código (funciones o métodos) se combinan en
+                    entidades llamadas objetos. Un objeto puede verse como un paquete que contiene el “comportamiento”
+                    (el código) y el “estado” (datos). El principio es separar aquello que cambia de las cosas que
+                    permanecen inalterables. Frecuentemente, cambiar una estructura de datos implica un cambio en el
+                    código que opera sobre los mismos, o viceversa. Esta separación en objetos coherentes e
+                    independientes ofrece una base más estable para el diseño de un sistema software. El objetivo es
+                    hacer que grandes proyectos sean fáciles de gestionar y manejar, mejorando como consecuencia su
+                    calidad y reduciendo el número de proyectos fallidos.
+                </p>
+                <p> Otra de las grandes promesas de la programación orientada a objetos es la creación de entidades más
+                    genéricas (objetos) que permitan la reutilización del software entre proyectos, una de las premisas
+                    fundamentales de la Ingeniería del Software. Un objeto genérico “cliente”, por ejemplo, debería en
+                    teoría tener el mismo conjunto de comportamiento en diferentes proyectos, sobre todo cuando estos
+                    coinciden en cierta medida, algo que suele suceder en las grandes organizaciones. En este sentido,
+                    los objetos podrían verse como piezas reutilizables que pueden emplearse en múltiples proyectos
+                    distintos, posibilitando así a la industria del software construir proyectos de envergadura
+                    empleando componentes ya existentes y de comprobada calidad, conduciendo esto finalmente a una
+                    reducción drástica del tiempo de desarrollo. Podemos usar como ejemplo de objeto el aluminio. Una
+                    vez definidos datos (densidad, maleabilidad, etc.), y su “comportamiento” (soldar dos piezas, etc.),
+                    el objeto “aluminio” puede ser reutilizado en el campo de la construcción, del automóvil, de la
+                    aviación, etc.
 
-                <code>Codigo #</code>
+                </p>
+                <p>La reutilización del software ha experimentado resultados dispares, encontrando dos dificultades
+                    principales: el diseño de objetos realmente genéricos es pobremente comprendido, y falta una
+                    metodología para la amplia comunicación de oportunidades de reutilización. Algunas comunidades de
+                    “código abierto” (open source) quieren ayudar en este problema dando medios a los desarrolladores
+                    para diseminar la información sobre el uso y versatilidad de objetos reutilizables y bibliotecas de
+                    objetos.</p>
+            </section>
+
+            <section class="main-section" id="sintaxis">
+                <header>
+                    <h3>Sintaxis</h3>
+                </header>
+
+                <p>La sintaxis de Java se deriva en gran medida de C++. Pero a diferencia de este, que combina la
+                    sintaxis para programación genérica, estructurada y orientada a objetos, Java fue construido desde
+                    el principio para ser completamente orientado a objetos. Todo en Java es un objeto (salvo algunas
+                    excepciones), y todo en Java reside en alguna clase (recordemos que una clase es un molde a partir
+                    del cual pueden crearse varios objetos).</p>
+                <p> A diferencia de C++, Java no tiene sobrecarga de operadores7​ o herencia múltiple para clases,
+                    aunque la herencia múltiple está disponible para interfaces.</p>
+            </section>
+
+            <section class="main-section" id="app-autonomas">
+                <header>
+                    <h3>Aplicaciones autónomas</h3>
+                </header>
 
                 <ul>
-                    <li>lista-5</li>
-                    <li></li>
+                    <li>Todo en Java está dentro de una clase, incluyendo programas autónomos</li>
+                    <li>El código fuente se guarda en archivos con el mismo nombre que la clase que contienen y con
+                        extensión “.java”. Una clase (class) declarada pública (public) debe seguir este convenio. Si
+                        tenemos una clase llamada Hola, su código fuente deberá guardarse en el fichero “Hola.java”.
+                    </li>
+                    <li>El compilador genera un archivo de clase (con extensión “.class”) por cada una de las clases
+                        definidas en el archivo fuente. Una clase anónima se trata como si su nombre fuera la
+                        concatenación del nombre de la clase que la encierra, el símbolo “$”, y un número entero.</li>
+                    <li>Los programas que se ejecutan de forma independiente y autónoma, deben contener el método
+                        ”main()”.</li>
+                    <li>La palabra reservada ”void” indica que el método main no devuelve nada.</li>
+                    <li>El método main debe aceptar un array de objetos tipo String. Por acuerdo se referencia como
+                        ”args”, aunque puede emplearse cualquier otro identificador.</li>
+                    <li>La palabra reservada ”static” indica que el método es un método de clase, asociado a la clase en
+                        vez de a una instancia de la misma. El método main debe ser estático o ’’de clase’’.</li>
+                    <li>La palabra reservada public significa que un método puede ser llamado desde otras clases, o que
+                        la clase puede ser usada por clases fuera de la jerarquía de la propia clase. Otros tipos de
+                        acceso son ”private” o ”protected”.</li>
+                    <li>La utilidad de impresión (en pantalla por ejemplo) forma parte de la biblioteca estándar de
+                        Java: la clase ‘’’System’’’ define un campo público estático llamado ‘’’out’’’. El objeto out es
+                        una instancia de ‘’’PrintStream’’’, que ofrece el método ‘’’println (String)’’’ para volcar
+                        datos en la pantalla (la salida estándar).</li>
+                    <li>Las aplicaciones autónomas se ejecutan dando al entorno de ejecución de Java el nombre de la
+                        clase cuyo método main debe invocarse. Por ejemplo, una línea de comando (en Unix o Windows) de
+                        la forma java –cp . Hola ejecutará el programa del ejemplo (previamente compilado y generado
+                        “Hola.class”). El nombre de la clase cuyo método main se llama puede especificarse también en el
+                        fichero “MANIFEST” del archivo de empaquetamiento de Java (.jar).</li>
                 </ul>
             </section>
-            <section class="main-section" id="description-6">
+
+            <section class="main-section" id="applets">
                 <header>
-                    <h3>Description 6</h3>
+                    <h3>Applets</h3>
                 </header>
 
-                <p>Parrafos </p>
-                <p></p>
-                <p></p>
+                <p>Las <a href="https://es.wikipedia.org/wiki/Applet_Java" class="link-refer"><em>applet Java</em></a>
+                    son programas incrustados en otras aplicaciones, normalmente una página web que se muestra en un
+                    navegador.</p>
 
-                <code>Codigo #</code>
+                <pre>
+                    <code class="code">// Hello.java
+                        import javax.swing.JApplet;
+                        import java.awt.Graphics;
+                        
+                        public class Hello extends JApplet {
+                        
+                            public void paint(Graphics g) {
+                                g.drawString("Hola, mundo!", 65, 95);
+                            }
+                        
+                        }</code>
+                </pre>
+            </section>
 
+            <section class="main-section" id="variables">
+                <header>
+                    <h3>Variables en Java</h3>
+                </header>
+
+                <p>las variables Java son un espacio de memoria en el que guardamos un determinado valor (o dato). Para definir una variable seguiremos la estructura:
+                </p>
+                    <pre>
+                        <code>
+                            [privacidad] tipo_variable identificador;
+                    </code>
+                </pre>
+
+                    <p>Java es un lenguaje de tipado estático. Por lo cual todas las variables tendrán un tipo de dato (ya sea un tipo de dato primitivo o una clase) y un nombre de identificador.</p>
+                    
+                    <p>El tipo de dato se asignará a la hora de definir la variable. Además, en el caso de que las variables sean propiedades de objetos tendrán una privacidad.</p>
+                    
+                    <p>Ejemplos de variables serían…</p>
+
+                <pre>
+                    <code>
+                        int numero = 2;
+                        String cadena = "Hola";
+                       long decimal = 2.4;
+                       boolean flag = true;
+                </code>
+            </pre>
+
+            <p>Las variables son utilizadas como propiedades dentro de los objetos.</p>
+            <pre>
+                <code>
+                    class Triangulo {
+                        private long base;
+                        private long altura;
+                    }
+            </code>
+        </pre>
+            </section>
+
+            <section class="main-section" id="tipos-variables">
+                <header>
+                    <h3>Tipos de variables</h3>
+                </header>
+
+                <p>Dentro de Java podemos encontrar los siguientes tipos de variables:
+                </p>
                 <ul>
-                    <li>lista-6</li>
-                    <li></li>
+                    <li>Variables de instancia (campos no estáticos), son las variables que están definidas dentro de un objeto pero que no tienen un modificador de estáticas (static). Suelen llevar un modificador de visibilidad (public, private, protected) definiéndose.</li>
+                    <pre>
+                        <code>
+                            class Triangulo {
+                                private long base;
+                                private long altura;
+                            }
+                    </code>
+                    </pre>
+
+                    <li>Variables de clase (campos estáticos), son aquellas variables que están precedidas del modificador static. Esto indica que solo hay una instancia de dicha variable. Es decir, aunque tengamos N objetos de la clase, la variable estática solo se instancia una vez.</li>
+                    <pre>
+                        <code>
+                            class Triangulo {
+                                static long lados = 3;
+                            }
+                    </code>
+                </pre>
+
+                <li>Si además queremos que el valor no pueda cambiar nunca la definiremos como final.</li>
+                <pre>
+                    <code>
+                        class Matematicas {
+                            final static long PI = 3.14159;
+                        }
+                </code>
+            </pre>
+
+                <li>Variables locales, son variables temporales cuyo ámbito de visibilidad es el método sobre el que están definidas. No pueden ser accedidas desde otra parte del código. Se las distingue de las variables de instancia ya que estas no llevan modificadores de visibilidad delante.
+                </li>
+                <pre>
+                    <code>
+                        int variable = 2;
+                </code>
+            </pre>
+
+            <li>Parámetros, son las variables recibidas como parámetros de los métodos. Su visibilidad será el código que contenga dicho método.</li>
+            <pre>
+                <code>
+                    public Triangulo(long base, long altura){...}
+            </code>
+        </pre>
                 </ul>
             </section>
-            <section class="main-section" id="description-7">
+
+            
+            <section class="main-section" id="referencia">
                 <header>
-                    <h3>Description 7</h3>
+                    <h3>Referencia</h3>
                 </header>
 
-                <p>Parrafos </p>
-                <p></p>
-                <p></p>
+               <ul>
+                   <li> 
+                       <p>Para mayor información una de las guias completas la puede encontrar en este enlace <a href="" class="link-refer"><em>MDN Java</em></a></p>
+                </li>
+               </ul>
 
-                <code>Codigo #</code>
-
-                <ul>
-                    <li>lista-7</li>
-                    <li></li>
-                </ul>
-            </section>
-            <section class="main-section" id="description-8">
-                <header>
-                    <h3>Description 8</h3>
-                </header>
-
-                <p>Parrafos </p>
-                <p></p>
-                <p></p>
-
-                <code>Codigo #</code>
-
-                <ul>
-                    <li>lista-8</li>
-                    <li></li>
-                </ul>
-            </section>
-            <section class="main-section" id="description-9">
-                <header>
-                    <h3>Description 9</h3>
-                </header>
-
-                <p>Parrafos </p>
-                <p></p>
-                <p></p>
-
-                <code>Codigo #</code>
-
-                <ul>
-                    <li>lista-9</li>
-                    <li></li>
-                </ul>
-            </section>
-            <section class="main-section" id="description-10">
-                <header>
-                    <h3>Description 10</h3>
-                </header>
-
-                <p>Parrafos </p>
-                <p></p>
-                <p></p>
-
-                <code>Codigo #</code>
-
-                <ul>
-                    <li>lista-10</li>
-                    <li></li>
-                </ul>
             </section>
         </main>
     </div>
