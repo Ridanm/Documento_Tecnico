@@ -29,8 +29,8 @@
                     <li><a class="nav-link" href="#app-autonomas">Aplicaciones autónomas</a></li>
                     <li><a class="nav-link" href="#applets">Applets</a></li>
                     <li><a class="nav-link" href="#variables">Variables en Java</a></li>
-                    <li><a class="nav-link" href="#tipos-variables">Tipos de variables</li>
-                    <li><a class="nav-link" href="#referencia" >Referencia</li>
+                    <li><a class="nav-link" href="#tipos-variables">Tipos de variables</a></li>
+                    <li><a class="nav-link" href="#referencia" >Referencia</a></li>
                 </ul>
             </nav>
         </header>
@@ -129,13 +129,13 @@
                             como la clase estandar Collection, de la siguiente forma: </li>
                     </ul>
 
-                    <pre>
+            
                         <code class="code" >void displayWidgets (Iterable<Widget> widgets) {
                             for (Widget w : widgets) {
                                 w.display();
                             }
                         }</code>
-                    </pre>
+                
 
                     <li><span class="span">Java SE 6</span> (11 de diciembre de 2006) En esta versión Sun cambió el
                         nombre "JS2E" por <em>Java SE</em> y se elimino el "0" del número de versión.</li>
@@ -275,7 +275,7 @@
                     son programas incrustados en otras aplicaciones, normalmente una página web que se muestra en un
                     navegador.</p>
 
-                <pre>
+        
                     <code class="code">// Hello.java
                         import javax.swing.JApplet;
                         import java.awt.Graphics;
@@ -287,7 +287,7 @@
                             }
                         
                         }</code>
-                </pre>
+            
             </section>
 
             <section class="main-section" id="variables">
@@ -297,11 +297,11 @@
 
                 <p>las variables Java son un espacio de memoria en el que guardamos un determinado valor (o dato). Para definir una variable seguiremos la estructura:
                 </p>
-                    <pre>
-                        <code>
+            
+                        <code class="code">
                             [privacidad] tipo_variable identificador;
                     </code>
-                </pre>
+            
 
                     <p>Java es un lenguaje de tipado estático. Por lo cual todas las variables tendrán un tipo de dato (ya sea un tipo de dato primitivo o una clase) y un nombre de identificador.</p>
                     
@@ -309,24 +309,24 @@
                     
                     <p>Ejemplos de variables serían…</p>
 
-                <pre>
-                    <code>
+        
+                    <code class="code">
                         int numero = 2;
                         String cadena = "Hola";
                        long decimal = 2.4;
                        boolean flag = true;
                 </code>
-            </pre>
+        
 
             <p>Las variables son utilizadas como propiedades dentro de los objetos.</p>
-            <pre>
-                <code>
+    
+                <code class="code">
                     class Triangulo {
                         private long base;
                         private long altura;
                     }
             </code>
-        </pre>
+    
             </section>
 
             <section class="main-section" id="tipos-variables">
@@ -338,47 +338,47 @@
                 </p>
                 <ul>
                     <li>Variables de instancia (campos no estáticos), son las variables que están definidas dentro de un objeto pero que no tienen un modificador de estáticas (static). Suelen llevar un modificador de visibilidad (public, private, protected) definiéndose.</li>
-                    <pre>
-                        <code>
+            
+                        <code class="code">
                             class Triangulo {
                                 private long base;
                                 private long altura;
                             }
                     </code>
-                    </pre>
+                
 
                     <li>Variables de clase (campos estáticos), son aquellas variables que están precedidas del modificador static. Esto indica que solo hay una instancia de dicha variable. Es decir, aunque tengamos N objetos de la clase, la variable estática solo se instancia una vez.</li>
-                    <pre>
-                        <code>
+            
+                        <code class="code">
                             class Triangulo {
                                 static long lados = 3;
                             }
                     </code>
-                </pre>
+            
 
                 <li>Si además queremos que el valor no pueda cambiar nunca la definiremos como final.</li>
-                <pre>
-                    <code>
+        
+                    <code class="code">
                         class Matematicas {
                             final static long PI = 3.14159;
                         }
                 </code>
-            </pre>
+        
 
                 <li>Variables locales, son variables temporales cuyo ámbito de visibilidad es el método sobre el que están definidas. No pueden ser accedidas desde otra parte del código. Se las distingue de las variables de instancia ya que estas no llevan modificadores de visibilidad delante.
                 </li>
-                <pre>
-                    <code>
+        
+                    <code class="code">
                         int variable = 2;
                 </code>
-            </pre>
+        
 
             <li>Parámetros, son las variables recibidas como parámetros de los métodos. Su visibilidad será el código que contenga dicho método.</li>
-            <pre>
-                <code>
+    
+                <code class="code">
                     public Triangulo(long base, long altura){...}
             </code>
-        </pre>
+    
                 </ul>
             </section>
 
