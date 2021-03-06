@@ -9,6 +9,7 @@
     <meta name="keywords" content="Html Css">
     <meta name="name" content="Ridanm">
     <link rel="stylesheet" href="/style/document.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <title>Java</title>
 </head>
 
@@ -17,10 +18,10 @@
         <header id="header" class="header-lateral-bar">
             <nav id="navbar" class="nav-bar">
                 <header>
-                    <h3>Indice:</h3>
+                    <h3>Indice</h3>
                 </header>
                 <ul class="ul-list">
-                    <li><a class="nav-link" href="#historia">Historia</a></li>
+                    <li><a class="nav-link" href="#resumen">Resumen</a></li>
                     <li><a class="nav-link" href="#introduccion">Introduccion</a></li>
                     <li><a class="nav-link" href="#evolucion">Evolución</a></li>
                     <li><a class="nav-link" href="#filosofia">Filosofia</a></li>
@@ -30,15 +31,15 @@
                     <li><a class="nav-link" href="#applets">Applets</a></li>
                     <li><a class="nav-link" href="#variables">Variables en Java</a></li>
                     <li><a class="nav-link" href="#tipos-variables">Tipos de variables</a></li>
-                    <li><a class="nav-link" href="#referencia" >Referencia</a></li>
+                    <li><a class="nav-link referencia" href="#referencia">Info Java MDN</a></li>
                 </ul>
             </nav>
         </header>
 
         <main id="main-doc" class="main-cont">
-            <section class="main-section" id="historia">
+            <section class="main-section ancla" id="resumen">
                 <header>
-                    <h3>Historia</h3>
+                    <h3>Resumen de Java</h3>
                 </header>
                 <p>Java desarrollado originalmente por James Gosling, de Sun Microsystems (constituida en 1983 y
                     posteriormente adquirida por la compañia Oracle en 2010.</p>
@@ -54,7 +55,7 @@
                     cualquier máquina virtual Java (JVM) sin importar la arquitectura de la computadora subyacente.</p>
             </section>
 
-            <section class="main-section" id="introduccion">
+            <section class="main-section ancla" id="introduccion">
                 <header>
                     <h3>Introduccion</h3>
                 </header>
@@ -129,13 +130,13 @@
                             como la clase estandar Collection, de la siguiente forma: </li>
                     </ul>
 
-            
-                        <code class="code" >void displayWidgets (Iterable<Widget> widgets) {
+
+                    <code class="code">void displayWidgets (Iterable<Widget> widgets) {
                             for (Widget w : widgets) {
                                 w.display();
                             }
                         }</code>
-                
+
 
                     <li><span class="span">Java SE 6</span> (11 de diciembre de 2006) En esta versión Sun cambió el
                         nombre "JS2E" por <em>Java SE</em> y se elimino el "0" del número de versión.</li>
@@ -275,8 +276,8 @@
                     son programas incrustados en otras aplicaciones, normalmente una página web que se muestra en un
                     navegador.</p>
 
-        
-                    <code class="code">// Hello.java
+
+                <code class="code">// Hello.java
                         import javax.swing.JApplet;
                         import java.awt.Graphics;
                         
@@ -287,7 +288,7 @@
                             }
                         
                         }</code>
-            
+
             </section>
 
             <section class="main-section" id="variables">
@@ -295,38 +296,41 @@
                     <h3>Variables en Java</h3>
                 </header>
 
-                <p>las variables Java son un espacio de memoria en el que guardamos un determinado valor (o dato). Para definir una variable seguiremos la estructura:
+                <p>las variables Java son un espacio de memoria en el que guardamos un determinado valor (o dato). Para
+                    definir una variable seguiremos la estructura:
                 </p>
-            
-                        <code class="code">
+
+                <code class="code">
                             [privacidad] tipo_variable identificador;
                     </code>
-            
 
-                    <p>Java es un lenguaje de tipado estático. Por lo cual todas las variables tendrán un tipo de dato (ya sea un tipo de dato primitivo o una clase) y un nombre de identificador.</p>
-                    
-                    <p>El tipo de dato se asignará a la hora de definir la variable. Además, en el caso de que las variables sean propiedades de objetos tendrán una privacidad.</p>
-                    
-                    <p>Ejemplos de variables serían…</p>
 
-        
-                    <code class="code">
+                <p>Java es un lenguaje de tipado estático. Por lo cual todas las variables tendrán un tipo de dato (ya
+                    sea un tipo de dato primitivo o una clase) y un nombre de identificador.</p>
+
+                <p>El tipo de dato se asignará a la hora de definir la variable. Además, en el caso de que las variables
+                    sean propiedades de objetos tendrán una privacidad.</p>
+
+                <p>Ejemplos de variables serían…</p>
+
+
+                <code class="code">
                         int numero = 2;
                         String cadena = "Hola";
                        long decimal = 2.4;
                        boolean flag = true;
                 </code>
-        
 
-            <p>Las variables son utilizadas como propiedades dentro de los objetos.</p>
-    
+
+                <p>Las variables son utilizadas como propiedades dentro de los objetos.</p>
+
                 <code class="code">
                     class Triangulo {
                         private long base;
                         private long altura;
                     }
             </code>
-    
+
             </section>
 
             <section class="main-section" id="tipos-variables">
@@ -337,62 +341,70 @@
                 <p>Dentro de Java podemos encontrar los siguientes tipos de variables:
                 </p>
                 <ul>
-                    <li>Variables de instancia (campos no estáticos), son las variables que están definidas dentro de un objeto pero que no tienen un modificador de estáticas (static). Suelen llevar un modificador de visibilidad (public, private, protected) definiéndose.</li>
-            
-                        <code class="code">
+                    <li>Variables de instancia (campos no estáticos), son las variables que están definidas dentro de un
+                        objeto pero que no tienen un modificador de estáticas (static). Suelen llevar un modificador de
+                        visibilidad (public, private, protected) definiéndose.</li>
+
+                    <code class="code">
                             class Triangulo {
                                 private long base;
                                 private long altura;
                             }
                     </code>
-                
 
-                    <li>Variables de clase (campos estáticos), son aquellas variables que están precedidas del modificador static. Esto indica que solo hay una instancia de dicha variable. Es decir, aunque tengamos N objetos de la clase, la variable estática solo se instancia una vez.</li>
-            
-                        <code class="code">
+
+                    <li>Variables de clase (campos estáticos), son aquellas variables que están precedidas del
+                        modificador static. Esto indica que solo hay una instancia de dicha variable. Es decir, aunque
+                        tengamos N objetos de la clase, la variable estática solo se instancia una vez.</li>
+
+                    <code class="code">
                             class Triangulo {
                                 static long lados = 3;
                             }
                     </code>
-            
 
-                <li>Si además queremos que el valor no pueda cambiar nunca la definiremos como final.</li>
-        
+
+                    <li>Si además queremos que el valor no pueda cambiar nunca la definiremos como final.</li>
+
                     <code class="code">
                         class Matematicas {
                             final static long PI = 3.14159;
                         }
                 </code>
-        
 
-                <li>Variables locales, son variables temporales cuyo ámbito de visibilidad es el método sobre el que están definidas. No pueden ser accedidas desde otra parte del código. Se las distingue de las variables de instancia ya que estas no llevan modificadores de visibilidad delante.
-                </li>
-        
+
+                    <li>Variables locales, son variables temporales cuyo ámbito de visibilidad es el método sobre el que
+                        están definidas. No pueden ser accedidas desde otra parte del código. Se las distingue de las
+                        variables de instancia ya que estas no llevan modificadores de visibilidad delante.
+                    </li>
+
                     <code class="code">
                         int variable = 2;
                 </code>
-        
 
-            <li>Parámetros, son las variables recibidas como parámetros de los métodos. Su visibilidad será el código que contenga dicho método.</li>
-    
-                <code class="code">
+
+                    <li>Parámetros, son las variables recibidas como parámetros de los métodos. Su visibilidad será el
+                        código que contenga dicho método.</li>
+
+                    <code class="code">
                     public Triangulo(long base, long altura){...}
             </code>
-    
+
                 </ul>
             </section>
 
-            
+
             <section class="main-section" id="referencia">
                 <header>
                     <h3>Referencia</h3>
                 </header>
 
-               <ul>
-                   <li> 
-                       <p>Esto es solo un resumen para mayor información la guía completas la puede encontrar en este enlace <a href="" class="link-refer"><em>MDN Java</em></a></p>
-                </li>
-               </ul>
+                <ul>
+                    <li>
+                        <p>Esto es solo un resumen para mayor información la guía completas la puede encontrar en este
+                            enlace <a href="" class="link-refer"><em>MDN Java</em></a></p>
+                    </li>
+                </ul>
 
             </section>
         </main>
